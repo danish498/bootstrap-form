@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <title>FormControl</title>
+  </head>
+  <body>
+    <div class="container">
+      <h4 class="text-muted mt-2">Text input</h4>
+      <label for="inputText" class="form-label"> Text input label </label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Text input placeholder"
+        id="inputText"
+      />
+
+      <!---------------Textarea---------------------------------------------->
+      
+      <h4 class="text-muted mt-2">Textarea</h4>
+
+      <label for="textarea" class="form-label">Textarea</label>
+      <textarea class="form-control" id="textarea  rows="5"  placeholder="Write your message here..." ></textarea>
+    </div>
+
+    <!----Sizing----->
+
+<div class="container">
+<h3 class="text-muted  text-center my-2 "> Sizing  </h3>
+
+<h4 class="text-muted mt-2">small</h4>
+<label for="inputTextSmall" class="form-label"> Text input label </label>
+<input
+  type="text"
+  class="form-control form-control-sm"
+  placeholder="Text input placeholder"
+  id="inputTextSmall"
+/>
+
+<h4 class="text-muted mt-2">large</h4>
+<label for="inputTextLarge" class="form-label"> Text input label </label>
+<input
+  type="text"
+  class="form-control  form-control-lg"
+  placeholder="Text input placeholder"
+  id="inputTextLarge"
+/>
+
+<h4 class="text-muted">Readonly</h4>
+<label for="inputTextReadOnly" class="form-label"> Text input label </label>
+<input
+  type="text"
+  class="form-control"
+  placeholder="Text input placeholder"
+  id="inputTextReadOnly"
+  readonly =''
+/>
+
+<h4 class="text-muted">Readonly  Plaine Text </h4>
+<label for="inputTextReadOnly" class="form-label"> Text input label </label>
+<input
+  type="text"
+  class="form-control-plaintext"
+  placeholder="Text input placeholder"
+  id="inputTextReadOnly"
+  readonly ='' 
+  />
+
+
+  <h4 class="text-muted mt-2">Text input</h4>
+      <label for="inputColor" class="form-label"> Text input label </label>
+      <input
+        type="color"
+        class="form-control form-control-color "
+        placeholder="Text input placeholder"
+        id="inputColor"
+      />
+
+      <h4 class="text-muted mt=2">Datalists</h4>
+      <label for="datalist" class="form-label"> Datalist label</label>
+      <input class="form-control" list="datalistOptions" id="datalist" placeholder="Type to search..." />
+      <datalist id="datalistOptions" >
+                
+              <option value="Bootstrap"/>
+              <option value="TailWinds"/>
+              <option value="MaterailUI"/>
+              <option value="Sass" />
+      </datalist>
+
+
+<div class="container">
+  <h3 class="text-muted text-center my-3">File</h3>
+  
+  <h4 class="text-muted">Deault</h4>
+  <label for="inputfile" class="form-label">Default input file label</label>
+  <input type="file" class="form-control" id="inputfile" >
+
+  
+  <h4 class="text-muted">Multiple</h4>
+  <label for="inputfileMultiple" class="form-label">Multiple input file label</label>
+  <input type="file" class="form-control" id="inputfileMultiple" multiple ="" >
+
+
+
+  <h4 class="text-muted">Disable</h4>
+  <label for="inputfileDisable" class="form-label">Disable input file label</label>
+  <input type="file" class="form-control" id="inputfileDisable" disabled ="" >
+
+
+  <h4 class="text-muted">Large</h4>
+  <label for="inputfileLarge" class="form-label">Large input file label</label>
+  <input type="file" class="form-control  form-control-lg" id="inputfileLarge" >
+
+  <h4 class="text-muted">small</h4>
+  <label for="inputfileSmall" class="form-label">Small input file label</label>
+  <input type="file" class="form-control  form-control-sm" id="inputfileSmall" >
+
+
+</div>
+
+
+  
+
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
